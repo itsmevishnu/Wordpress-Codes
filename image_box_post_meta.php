@@ -1,4 +1,15 @@
 
+// Includes the banner image js for proper uploading
+add_action('admin_enqueue_scripts', 'hyreo_include_image_js');	
+function hyreo_include_image_js() {
+
+	if ( ! did_action( 'wp_enqueue_media' ) ) {
+        wp_enqueue_media();
+    }
+	
+	wp_enqueue_script('hyreo_banner_script', get_stylesheet_directory_uri(). '/js/banner_image.js', ['jquery'], '1.0', true);
+}
+
 // Function for creating a metabox to store the banner image details.
 function hyreo_banner_image_metabox() {
 	add_meta_box(
