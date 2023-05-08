@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: fpm settings
-Description: Modification in most used football tournament plugin. Now we can calculate the winnerby  weekly or daily wise. The winner post type will list all the winners. Also there is leader board shotcode also avaiable.
+Description: Modification in most used football tournament plugin. Now calculate the winners of prediction competition weekly or daily wise. The winner post type lists all the winners. Also there is leader board shotcode also avaiable.
 Available shortcodes
 [daily-winner type="prediction"] will display the daily winnner of type prediction.
 [all-winners type="prediction"] will display the list of all winners of the type prediction.
